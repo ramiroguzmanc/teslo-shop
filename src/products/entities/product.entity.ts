@@ -29,4 +29,21 @@ export class Product {
     unique: true,
   })
   slug: string
+
+  @Column({
+    type: 'int',
+    default: 0,
+  })
+  stock: number
+
+  @Column({
+    type: 'text',
+    array: true,
+  })
+  sizes: string[]
+
+  @Column({
+    type: 'text',
+  })
+  gender: string
 }

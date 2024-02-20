@@ -34,6 +34,7 @@ export class CreateProductDto {
 
   @IsString({ each: true })
   @IsArray()
+  @IsIn(['XS', 'S', 'M', 'L', 'XL'], { each: true })
   sizes: string[]
 
   @IsString()

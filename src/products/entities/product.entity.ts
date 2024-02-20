@@ -13,7 +13,7 @@ export class Product {
   title: string
 
   @Column({
-    type: 'numeric',
+    type: 'float',
     default: 0,
   })
   price: number
